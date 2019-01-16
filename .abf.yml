@@ -1,2 +1,4 @@
+removed_sources:
+  python-evdev-0.7.0.tar.gz: 57178d607c8ed82bc292246f258b420babce6807
 sources:
-    python-evdev-0.7.0.tar.gz: 57178d607c8ed82bc292246f258b420babce6807
+  python-evdev-1.1.2.tar.gz: a4317e06e927d4eb85b0af81e05fdc37964b54a0

@@ -1,13 +1,13 @@
 %define module  evdev
 
 Name:           python-%{module}
-Version:        0.7.0
+Version:        1.1.2
 Release:        1
 Summary:        Python 3 bindings to the Linux input handling subsystem
 Group:          Development/Python
 License:        BSD
 URL:            http://python-evdev.rtfd.org
-Source0:        https://github.com/gvalkov/python-evdev/archive/v%{version}/%{name}-%{version}.tar.gz
+Source0:        https://github.com/gvalkov/python-evdev/archive/v1.1.2/%{name}-%{version}.tar.gz
 
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python3egg(setuptools)
@@ -51,10 +51,10 @@ devices that can inject events directly into the input subsystem.
 
 %files
 %doc README.rst
-%{python_sitearch}/%{module}/
-%{python_sitearch}/%{module}-%{version}-py%{python_version}.egg-info/
+%{py_platsitedir}/%{module}/
+%{py_platsitedir}/%{module}-%{version}-py%{py_ver}.egg-info/
 
 %files -n       python2-%{module}
 %doc README.rst
-%{python2_sitearch}/%{module}/
-%{python2_sitearch}/%{module}-%{version}-py%{python2_version}.egg-info
+%{py_platsitedir}/%{module}/
+%{py_platsitedir}/%{module}-%{version}-py%{python2_version}.egg-info
