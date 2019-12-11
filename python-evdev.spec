@@ -2,7 +2,7 @@
 
 Name:           python-%{module}
 Version:	1.2.0
-Release:        1
+Release:        2
 Summary:        Python 3 bindings to the Linux input handling subsystem
 Group:          Development/Python
 License:        BSD
