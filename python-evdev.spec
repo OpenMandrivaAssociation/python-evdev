@@ -1,7 +1,7 @@
 %define module  evdev
 
 Name:           python-%{module}
-Version:	1.3.0
+Version:	1.4.0
 Release:	1
 Summary:        Python 3 bindings to the Linux input handling subsystem
 Group:          Development/Python
