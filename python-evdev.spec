@@ -1,8 +1,8 @@
 %define module evdev
 
 Name:		python-%{module}
-Version:	1.6.0
-Release:	2
+Version:	1.6.1
+Release:	1
 Summary:	Python 3 bindings to the Linux input handling subsystem
 Group:		Development/Python
 License:	BSD
