@@ -6,7 +6,7 @@ Release:	1
 Summary:	Python 3 bindings to the Linux input handling subsystem
 Group:		Development/Python
 License:	BSD
-URL:		http://python-evdev.rtfd.org
+URL:		https://python-evdev.rtfd.org
 Source0:	https://github.com/gvalkov/python-evdev/archive/v%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python3egg(setuptools)
