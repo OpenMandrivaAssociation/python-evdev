@@ -11,6 +11,7 @@ Source0:  https://files.pythonhosted.org/packages/source/e/evdev/evdev-%{version
 #Source0:	https://github.com/gvalkov/python-evdev/archive/v%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(pip)
 
 %description
 This package provides bindings to the generic input event interface in Linux.
