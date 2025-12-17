@@ -1,15 +1,17 @@
 %define module evdev
 
 Name:		python-%{module}
-Version:	1.6.1
-Release:	2
+Version:	1.9.2
+Release:	1
 Summary:	Python 3 bindings to the Linux input handling subsystem
 Group:		Development/Python
 License:	BSD
 URL:		https://python-evdev.rtfd.org
-Source0:	https://github.com/gvalkov/python-evdev/archive/v%{version}/%{name}-%{version}.tar.gz
+Source0:  https://files.pythonhosted.org/packages/source/e/evdev/evdev-%{version}.tar.gz
+#Source0:	https://github.com/gvalkov/python-evdev/archive/v%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(python)
-BuildRequires:	python3egg(setuptools)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(pip)
 
 %description
 This package provides bindings to the generic input event interface in Linux.
@@ -22,7 +24,7 @@ subsystem. Uinput allows userspace programs to create and handle input
 devices that can inject events directly into the input subsystem.
 
 %prep
-%autosetup -p1
+%autosetup -n evdev-%{version} -p1
 
 %build
 %py_build
@@ -31,7 +33,6 @@ devices that can inject events directly into the input subsystem.
 %py_install
 
 %files
-%doc README.rst
 %dir %{python_sitearch}/%{module}
 %{python_sitearch}/%{module}/*
-%{python_sitearch}/%{module}-%{version}-py*.egg-info/
+%{python_sitearch}/evdev-*.dist-info
