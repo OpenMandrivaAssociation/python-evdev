@@ -33,7 +33,6 @@ devices that can inject events directly into the input subsystem.
 %py_install
 
 %files
-%doc README.rst
 %dir %{python_sitearch}/%{module}
 %{python_sitearch}/%{module}/*
-%{python_sitearch}/%{module}-%{version}-py*.egg-info/
+
