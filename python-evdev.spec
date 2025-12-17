@@ -1,15 +1,15 @@
 %define module evdev
 
 Name:		python-%{module}
-Version:	1.6.1
-Release:	2
+Version:	1.9.2
+Release:	1
 Summary:	Python 3 bindings to the Linux input handling subsystem
 Group:		Development/Python
 License:	BSD
 URL:		https://python-evdev.rtfd.org
 Source0:	https://github.com/gvalkov/python-evdev/archive/v%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(python)
-BuildRequires:	python3egg(setuptools)
+BuildRequires:	python%{pyver}dist(setuptools)
 
 %description
 This package provides bindings to the generic input event interface in Linux.
