@@ -7,7 +7,8 @@ Summary:	Python 3 bindings to the Linux input handling subsystem
 Group:		Development/Python
 License:	BSD
 URL:		https://python-evdev.rtfd.org
-Source0:	https://github.com/gvalkov/python-evdev/archive/v%{version}/%{name}-%{version}.tar.gz
+Source0:  https://files.pythonhosted.org/packages/source/e/evdev/evdev-%{version}.tar.gz
+#Source0:	https://github.com/gvalkov/python-evdev/archive/v%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python%{pyver}dist(setuptools)
 
@@ -22,7 +23,7 @@ subsystem. Uinput allows userspace programs to create and handle input
 devices that can inject events directly into the input subsystem.
 
 %prep
-%autosetup -p1
+%autosetup -n evdev-%{version} -p1
 
 %build
 %py_build
