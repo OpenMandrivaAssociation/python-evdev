@@ -35,4 +35,4 @@ devices that can inject events directly into the input subsystem.
 %files
 %dir %{python_sitearch}/%{module}
 %{python_sitearch}/%{module}/*
-
+%{python_sitearch}/evdev-*.dist-info
