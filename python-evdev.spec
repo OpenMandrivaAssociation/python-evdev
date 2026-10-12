@@ -2,7 +2,7 @@
 
 Name:		python-evdev
 Version:	1.9.3
-Release:	1
+Release:	2
 Summary:	Python 3 bindings to the Linux input handling subsystem
 Group:		Development/Python
 License:	BSD-3-Clause
